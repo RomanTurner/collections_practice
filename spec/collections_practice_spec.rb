@@ -26,7 +26,7 @@ describe 'collections practice' do
   # Question 4
   describe '#swap_elements' do
     it 'swap the second and third elements of an array' do
-      expect(swap_elements(["blake", "ashley", "scott"])).to eq(["blake", "scott", "ashley"])
+      expect(swap_elements(["blake", "ashley", "scott"],1,2)).to eq(["blake", "scott", "ashley"])
     end
   end
 
@@ -66,4 +66,12 @@ describe 'collections practice' do
       expect(add_s(["hand","feet", "knee", "table"])).to eq(["hands","feet", "knees", "tables"])
     end
   end
+
+
+  describe '#add_s_two' do
+    it 'Add an "s" to each word in the array except for the 2nd element in the array' do
+      expect(add_s_two(["hand","feet", "knee", "table"])).to eq(["hands","feet", "knees", "tables"])
+    end
+  end
+  
 end
